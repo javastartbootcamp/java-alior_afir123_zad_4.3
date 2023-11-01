@@ -1,4 +1,4 @@
-package pl.javastart.task.Shop;
+package pl.javastart.task.shop;
 
 public class Product {
     String name;
@@ -28,8 +28,10 @@ public class Product {
     }
 
     public String getCategory() {
-        if (category != null)
+        if (category != null) {
             return category;
-        else return "BRAK";
+        } else {
+            return "BRAK";
+        }
     }
 }

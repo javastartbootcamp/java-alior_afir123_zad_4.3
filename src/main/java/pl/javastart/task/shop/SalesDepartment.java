@@ -1,4 +1,4 @@
-package pl.javastart.task.Shop;
+package pl.javastart.task.shop;
 
 public class SalesDepartment {
 
