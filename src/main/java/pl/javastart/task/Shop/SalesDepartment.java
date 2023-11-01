@@ -8,7 +8,9 @@ public class SalesDepartment {
                 return product.getNetPrice() * 1.23;
             case "Słodycze":
                 return product.getNetPrice() * 1.08;
-            case null, default:
+            case null:
+                return product.getNetPrice() * 1.03;
+            default:
                 return product.getNetPrice() * 1.03;
         }
     }
