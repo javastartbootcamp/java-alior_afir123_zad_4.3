@@ -9,7 +9,7 @@ public class Main {
         Product product1 = new Product("Mleko", "3.2%", 2.20, "Nabiał");
         Product product2 = new Product("Czekolada", "gorzka", 4.60, "Słodycze");
         Product product3 = new Product("Łosoś", "mrożony", 64.60, "Mrożonki");
-        Product product4 = new Product("Pomidor", "gałązka", 2.60);
+        Product product4 = new Product("Pomidor", "gałązka", 2.60,"inna");
 
         SalesDepartment salesDepartment = new SalesDepartment();
 
