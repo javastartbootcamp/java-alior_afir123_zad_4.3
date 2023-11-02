@@ -1,5 +1,7 @@
 package pl.javastart.task.shop;
 
+import java.util.Objects;
+
 public class Product {
     String name;
     String description;
@@ -15,23 +17,18 @@ public class Product {
         this.name = name;
         this.description = description;
         this.netPrice = netPrice;
-
     }
 
-    public String getName() {
-        return name;
+    public void printInfo(Product product, double grossPrice) {
+        System.out.printf("Produkt \"%s\", z kategorii \"%s\", cena netto: %.2f, cena brutto: %.2f %n",
+                name, product.getCategory(), netPrice, grossPrice);
     }
 
     public double getNetPrice() {
         return netPrice;
-
     }
 
     public String getCategory() {
-        if (category != null) {
-            return category;
-        } else {
-            return "BRAK";
-        }
+        return Objects.requireNonNullElse(category, "Brak kategorii");
     }
 }
